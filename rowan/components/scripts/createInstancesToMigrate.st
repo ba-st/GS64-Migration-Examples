@@ -19,6 +19,6 @@ instances := Dictionary new
 		ClassToBeRenamedWithInstanceVariableToBeRenamed new.	};
 	at: #classMove put: { ClassToMoveFromSymbolList new. }; 
 	at: #collection put: { CollectionForMigration new };
-	yourself
+	yourself.
 
 symbolDictionary at: #GS64MigrationPersistentRoot put: instances
