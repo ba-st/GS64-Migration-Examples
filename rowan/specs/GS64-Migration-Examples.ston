@@ -1,0 +1,9 @@
+RwLoadSpecificationV2 {
+  #specName: 'GS64-Migration-Examples',
+  #projectName : 'GS64-Migration-Examples',
+  #diskUrl : 'GS64-Migration-Examples',
+  #projectSpecFile : 'rowan/project.ston',
+  #componentNames : [
+    'Examples'
+  ]
+}
