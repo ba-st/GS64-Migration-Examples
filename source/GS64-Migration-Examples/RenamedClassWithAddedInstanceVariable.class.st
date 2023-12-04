@@ -1,28 +1,30 @@
 Class {
-	#name : 'ClassToBeRenamedAmdChangeSuperclassToStatefull',
+	#name : 'RenamedClassWithAddedInstanceVariable',
 	#superclass : 'Object',
 	#instVars : [
-		'unchanged'
+		'unchanged',
+		'newVariable'
 	],
 	#category : 'GS64-Migration-Examples',
 	#package : 'GS64-Migration-Examples'
 }
 
 { #category : 'instance creation' }
-ClassToBeRenamedAmdChangeSuperclassToStatefull class >> new [
+RenamedClassWithAddedInstanceVariable class >> new [
 
 	^ super new initialize
 ]
 
 { #category : 'initialization' }
-ClassToBeRenamedAmdChangeSuperclassToStatefull >> initialize [
+RenamedClassWithAddedInstanceVariable >> initialize [
 
 	super initialize .
-	unchanged := 42
+	unchanged := 42.
+	newVariable := 43
 ]
 
 { #category : 'accessing' }
-ClassToBeRenamedAmdChangeSuperclassToStatefull >> unchanged [
+RenamedClassWithAddedInstanceVariable >> unchanged [
 
 	^ unchanged
 ]

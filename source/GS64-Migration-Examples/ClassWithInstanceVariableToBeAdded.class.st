@@ -2,7 +2,8 @@ Class {
 	#name : 'ClassWithInstanceVariableToBeAdded',
 	#superclass : 'Object',
 	#instVars : [
-		'unchanged'
+		'unchanged',
+		'newVariable'
 	],
 	#category : 'GS64-Migration-Examples',
 	#package : 'GS64-Migration-Examples'
@@ -18,7 +19,8 @@ ClassWithInstanceVariableToBeAdded class >> new [
 ClassWithInstanceVariableToBeAdded >> initialize [
 
 	super initialize .
-	unchanged := 42
+	unchanged := 42.
+	newVariable := 43
 ]
 
 { #category : 'accessing' }

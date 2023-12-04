@@ -2,8 +2,8 @@ Class {
 	#name : 'ClassWithInstanceVariableToBeRenamed',
 	#superclass : 'Object',
 	#instVars : [
-		'original',
-		'unchanged'
+		'unchanged',
+		'renamed'
 	],
 	#category : 'GS64-Migration-Examples',
 	#package : 'GS64-Migration-Examples'
@@ -19,14 +19,14 @@ ClassWithInstanceVariableToBeRenamed class >> new [
 ClassWithInstanceVariableToBeRenamed >> initialize [
 
 	super initialize .
-	original := 'original variable'.
+	renamed := 'original variable'.
 	unchanged := 42
 ]
 
 { #category : 'accessing' }
 ClassWithInstanceVariableToBeRenamed >> original [
 
-	^ original
+	^ renamed
 ]
 
 { #category : 'accessing' }

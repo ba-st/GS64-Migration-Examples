@@ -1,6 +1,6 @@
 Class {
 	#name : 'ClassToChangeSuperclassToStatefull',
-	#superclass : 'Object',
+	#superclass : 'StatefullSuperclass',
 	#instVars : [
 		'unchanged'
 	],

@@ -1,6 +1,6 @@
 Class {
-	#name : 'ClassToBeRenamedAndChangeSuperclassToStateless',
-	#superclass : 'Object',
+	#name : 'RenamedSubclassOfStateless',
+	#superclass : 'StatelessSuperclass',
 	#instVars : [
 		'unchanged'
 	],
@@ -9,20 +9,20 @@ Class {
 }
 
 { #category : 'instance creation' }
-ClassToBeRenamedAndChangeSuperclassToStateless class >> new [
+RenamedSubclassOfStateless class >> new [
 
 	^ super new initialize
 ]
 
 { #category : 'initialization' }
-ClassToBeRenamedAndChangeSuperclassToStateless >> initialize [
+RenamedSubclassOfStateless >> initialize [
 
 	super initialize .
 	unchanged := 42
 ]
 
 { #category : 'accessing' }
-ClassToBeRenamedAndChangeSuperclassToStateless >> unchanged [
+RenamedSubclassOfStateless >> unchanged [
 
 	^ unchanged
 ]

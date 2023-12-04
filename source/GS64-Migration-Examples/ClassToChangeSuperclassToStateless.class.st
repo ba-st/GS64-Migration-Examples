@@ -1,6 +1,6 @@
 Class {
 	#name : 'ClassToChangeSuperclassToStateless',
-	#superclass : 'Object',
+	#superclass : 'StatelessSuperclass',
 	#instVars : [
 		'unchanged'
 	],

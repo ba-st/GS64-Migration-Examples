@@ -11,7 +11,7 @@ Class {
 { #category : 'testing' }
 StatefullSuperclass class >> isAbstract [
 
-	^ true
+	^ self = StatefullSuperclass
 ]
 
 { #category : 'accessing' }

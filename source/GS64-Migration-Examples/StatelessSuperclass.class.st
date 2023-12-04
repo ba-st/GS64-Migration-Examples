@@ -8,5 +8,5 @@ Class {
 { #category : 'testing' }
 StatelessSuperclass class >> isAbstract [
 
-	^ true
+	^ self = StatelessSuperclass
 ]

@@ -1,6 +1,6 @@
 Class {
-	#name : 'ClassToBeRenamedWithInstanceVariableToBeAdded',
-	#superclass : 'Object',
+	#name : 'RenamedSubclassOfStatefull',
+	#superclass : 'StatefullSuperclass',
 	#instVars : [
 		'unchanged'
 	],
@@ -9,20 +9,20 @@ Class {
 }
 
 { #category : 'instance creation' }
-ClassToBeRenamedWithInstanceVariableToBeAdded class >> new [
+RenamedSubclassOfStatefull class >> new [
 
 	^ super new initialize
 ]
 
 { #category : 'initialization' }
-ClassToBeRenamedWithInstanceVariableToBeAdded >> initialize [
+RenamedSubclassOfStatefull >> initialize [
 
 	super initialize .
 	unchanged := 42
 ]
 
 { #category : 'accessing' }
-ClassToBeRenamedWithInstanceVariableToBeAdded >> unchanged [
+RenamedSubclassOfStatefull >> unchanged [
 
 	^ unchanged
 ]

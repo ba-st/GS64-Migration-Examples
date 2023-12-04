@@ -1,5 +1,5 @@
 Class {
-	#name : 'ClassToBeRenamedWithInstanceVariableToBeRenamed',
+	#name : 'RenamedClassWithInstanceVariables',
 	#superclass : 'Object',
 	#instVars : [
 		'original',
@@ -10,13 +10,13 @@ Class {
 }
 
 { #category : 'instance creation' }
-ClassToBeRenamedWithInstanceVariableToBeRenamed class >> new [
+RenamedClassWithInstanceVariables class >> new [
 
 	^ super new initialize
 ]
 
 { #category : 'initialization' }
-ClassToBeRenamedWithInstanceVariableToBeRenamed >> initialize [
+RenamedClassWithInstanceVariables >> initialize [
 
 	super initialize .
 	original := 'original variable'.
@@ -24,13 +24,13 @@ ClassToBeRenamedWithInstanceVariableToBeRenamed >> initialize [
 ]
 
 { #category : 'accessing' }
-ClassToBeRenamedWithInstanceVariableToBeRenamed >> original [
+RenamedClassWithInstanceVariables >> original [
 
 	^ original
 ]
 
 { #category : 'accessing' }
-ClassToBeRenamedWithInstanceVariableToBeRenamed >> unchanged [
+RenamedClassWithInstanceVariables >> unchanged [
 
 	^ unchanged
 ]

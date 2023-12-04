@@ -1,5 +1,5 @@
 Class {
-	#name : 'ClassToBeRenamed',
+	#name : 'RenamedClass',
 	#superclass : 'Object',
 	#instVars : [
 		'classReference'
@@ -9,19 +9,19 @@ Class {
 }
 
 { #category : 'instance creation' }
-ClassToBeRenamed class >> new [
+RenamedClass class >> new [
 
 	^ super new initialize
 ]
 
 { #category : 'accessing' }
-ClassToBeRenamed >> classReference [
+RenamedClass >> classReference [
 
 	^ classReference
 ]
 
 { #category : 'initialization' }
-ClassToBeRenamed >> initialize [
+RenamedClass >> initialize [
 
 	super initialize .
 	classReference := 42

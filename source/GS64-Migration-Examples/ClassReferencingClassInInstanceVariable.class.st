@@ -31,6 +31,6 @@ ClassReferencingClassInInstanceVariable >> classWithNewVersion [
 ClassReferencingClassInInstanceVariable >> initialize [
 
 	super initialize.
-	classReference := ClassToBeRenamed.
+	classReference := RenamedClass.
 	classWithNewVersion := ClassWithInstanceVariableToBeAdded
 ]

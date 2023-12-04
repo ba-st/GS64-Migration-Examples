@@ -2,7 +2,6 @@ Class {
 	#name : 'ClassWithInstanceVariableToBeRemoved',
 	#superclass : 'Object',
 	#instVars : [
-		'toRemove',
 		'unchanged'
 	],
 	#category : 'GS64-Migration-Examples',
@@ -19,14 +18,7 @@ ClassWithInstanceVariableToBeRemoved class >> new [
 ClassWithInstanceVariableToBeRemoved >> initialize [
 
 	super initialize.
-	toRemove := 1.
 	unchanged := 42
-]
-
-{ #category : 'accessing' }
-ClassWithInstanceVariableToBeRemoved >> toRemove [
-
-	^ toRemove
 ]
 
 { #category : 'accessing' }

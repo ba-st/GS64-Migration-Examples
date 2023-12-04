@@ -4,8 +4,8 @@ Class {
 	#instVars : [
 		'unchanged'
 	],
-	#category : 'GS64-Migration-Examples',
-	#package : 'GS64-Migration-Examples'
+	#category : 'GS64-Migration-Examples2',
+	#package : 'GS64-Migration-Examples2'
 }
 
 { #category : 'instance creation' }
