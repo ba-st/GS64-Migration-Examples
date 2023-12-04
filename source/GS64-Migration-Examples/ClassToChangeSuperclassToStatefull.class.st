@@ -18,7 +18,8 @@ ClassToChangeSuperclassToStatefull class >> new [
 ClassToChangeSuperclassToStatefull >> initialize [
 
 	super initialize .
-	unchanged := 42
+	unchanged := 42.
+	state := 'ready'
 ]
 
 { #category : 'accessing' }
