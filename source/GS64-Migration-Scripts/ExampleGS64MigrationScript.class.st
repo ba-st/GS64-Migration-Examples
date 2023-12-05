@@ -14,6 +14,12 @@ ExampleGS64MigrationScript >> classNamesToMigrateToLatestVersion [
 ]
 
 { #category : 'accessing' }
+ExampleGS64MigrationScript >> classNamesToUpdateInstances [
+
+	^ #(  )
+]
+
+{ #category : 'accessing' }
 ExampleGS64MigrationScript >> classRenameMappings [
 
 	^ #(  )

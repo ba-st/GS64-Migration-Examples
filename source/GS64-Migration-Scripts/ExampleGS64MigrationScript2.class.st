@@ -7,6 +7,12 @@ Class {
 
 { #category : 'accessing' }
 ExampleGS64MigrationScript2 >> classNamesToMigrateToLatestVersion [
+
+	^ #(  )
+]
+
+{ #category : 'accessing' }
+ExampleGS64MigrationScript2 >> classNamesToUpdateInstances [
 	"This class hasn't changed its shape but references
 	changed classes in its instance variables, so we
 	need to fix up this during migration. This cases are
