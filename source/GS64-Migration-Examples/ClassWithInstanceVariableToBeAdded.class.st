@@ -2,7 +2,8 @@ Class {
 	#name : 'ClassWithInstanceVariableToBeAdded',
 	#superclass : 'Object',
 	#instVars : [
-		'unchanged'
+		'unchanged',
+		'newVariable'
 	],
 	#category : 'GS64-Migration-Examples',
 	#package : 'GS64-Migration-Examples'
