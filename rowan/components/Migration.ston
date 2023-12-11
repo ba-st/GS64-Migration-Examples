@@ -1,0 +1,19 @@
+RwSimpleProjectLoadComponentV2 {
+  #name : 'Migration',
+  #projectNames : [ ],
+  #componentNames : [
+    'Examples'
+  ],
+  #packageNames : [
+    'GS64-Migration-Scripts'
+  ],
+  #conditionalPackageMapSpecs : {
+    'gemstone' : {
+      'allusers' : {
+        #packageNameToPlatformPropertiesMap : {
+          'GS64-Migration-Scripts': { 'symbolDictName' : 'GS64Migration' }
+        }
+      }
+    }
+  }
+}

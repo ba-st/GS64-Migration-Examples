@@ -1,4 +1,4 @@
-| symbolDictionary instances |
+| symbolDictionary |
 symbolDictionary := Rowan image 
 	symbolDictNamed: 'GS64Migration'
 	ifAbsent: [
@@ -7,18 +7,6 @@ symbolDictionary := Rowan image
 	].
 
 "We create some instances strongly held so the migration process has something to test"
-instances := Dictionary new
-	at: #instanceVariableRename put: { ClassWithInstanceVariableToBeRenamed new. ClassWithInstanceVariableToBeRenamed new };
-	at: #instanceVariableAdd put: { ClassWithInstanceVariableToBeAdded new . ClassWithInstanceVariableToBeAdded new .ClassWithInstanceVariableToBeAdded new};
-	at: #instanceVariableRemove put: { ClassWithInstanceVariableToBeRemoved new };
-	at: #superclassChangeToStateless put: { ClassToChangeSuperclassToStateless new. ClassToChangeSuperclassToStateless new};
-	at: #superclassChangeToStatefull put: { ClassToChangeSuperclassToStatefull new. ClassToChangeSuperclassToStatefull new };
-	at: #instanceVariableWithClass put: { ClassReferencingClassInInstanceVariable new. ClassReferencingClassInInstanceVariable new };
-	at: #classRename put: { ClassToBeRenamed new. ClassToBeRenamed new . ClassToBeRenamedAmdChangeSuperclassToStatefull new.
-		ClassToBeRenamedAndChangeSuperclassToStateless new. ClassToBeRenamedWithInstanceVariableToBeAdded new.
-		ClassToBeRenamedWithInstanceVariableToBeRenamed new.	};
-	at: #classMove put: { ClassToMoveFromSymbolList new. }; 
-	at: #collection put: { CollectionForMigration new };
-	yourself.
-
-symbolDictionary at: #GS64MigrationPersistentRoot put: instances
+symbolDictionary
+	at: #GS64MigrationInvalidInstances
+	put: { ClassToRemoveWithoutInstances new. ClassToRemoveWithoutInstances new }
